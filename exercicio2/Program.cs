@@ -10,17 +10,17 @@ do
     {
         Console.WriteLine(@$"
     Escolha o combustível desejado: 
-    1- Gasolina
-    2- Alcool
+    G - Gasolina
+    A - Alcool
     ");
         combustivelInput = Console.ReadKey();
 
-        if (combustivelInput.Key == ConsoleKey.D1)
+        if (combustivelInput.Key == ConsoleKey.G)
         {
             preco = 5.30f;
             combustivel = "Gasolina";
         }
-        else if (combustivelInput.Key == ConsoleKey.D2)
+        else if (combustivelInput.Key == ConsoleKey.A)
         {
             preco = 4.90f;
             combustivel = "Alcool";
@@ -30,7 +30,7 @@ do
             Console.WriteLine($"\n Opção inválida! Tente novamente. ");
         }
 
-    } while (combustivelInput.Key != ConsoleKey.D1 && combustivelInput.Key != ConsoleKey.D2);
+    } while (combustivelInput.Key != ConsoleKey.G && combustivelInput.Key != ConsoleKey.A);
 
     do
     {
